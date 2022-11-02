@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+<!DOCTYPE niktoscan SYSTEM "/var/lib/nikto/docs/nikto.dtd">
+<niktoscan>
+<niktoscan hoststest="0" options="-host http://127.0.0.1/dvwa -Format xml -o niktoDVWA.xml" version="2.1.6" scanstart="Tue Jul 14 12:14:23 2020" scanend="Wed Dec 31 19:00:00 1969" scanelapsed=" seconds" nxmlversion="1.2">
+
+<scandetails targetip="127.0.0.1" targethostname="127.0.0.1" targetport="80" targetbanner="Apache/2.4.43 (Debian)" starttime="2020-07-14 12:14:24" sitename="http://127.0.0.1:80/dvwa/" siteip="http://127.0.0.1:80/dvwa/" hostheader="127.0.0.1" errors="0" checks="6897">
+
+
+<item id="999957" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The anti-clickjacking X-Frame-Options header is not present.]]></description>
+<uri><![CDATA[/dvwa/]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/]]></iplink>
+</item>
+
+<item id="999102" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS]]></description>
+<uri><![CDATA[/dvwa/]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/]]></iplink>
+</item>
+
+<item id="999103" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type]]></description>
+<uri><![CDATA[/dvwa/]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/]]></iplink>
+</item>
+
+<item id="999961" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie PHPSESSID created without the httponly flag]]></description>
+<uri><![CDATA[/dvwa/]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/]]></iplink>
+</item>
+
+<item id="999990" osvdbid="0" osvdblink="http://osvdb.org/0" method="OPTIONS">
+<description><![CDATA[Allowed HTTP Methods: GET, POST, OPTIONS, HEAD ]]></description>
+<uri><![CDATA[/dvwa/]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/]]></iplink>
+</item>
+
+<item id="000544" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa///etc/hosts: The server install allows reading of any system file by adding an extra '/' to the URL.]]></description>
+<uri><![CDATA[/dvwa///etc/hosts]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa///etc/hosts]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa///etc/hosts]]></iplink>
+</item>
+
+<item id="750500" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/dvwa/config/: Directory indexing found.]]></description>
+<uri><![CDATA[/dvwa/config/]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/config/]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/config/]]></iplink>
+</item>
+
+<item id="000998" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/config/: Configuration information may be available remotely.]]></description>
+<uri><![CDATA[/dvwa/config/]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/config/]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/config/]]></iplink>
+</item>
+
+<item id="750500" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/dvwa/docs/: Directory indexing found.]]></description>
+<uri><![CDATA[/dvwa/docs/]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/docs/]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/docs/]]></iplink>
+</item>
+
+<item id="006333" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/login.php: Admin login page/section found.]]></description>
+<uri><![CDATA[/dvwa/login.php]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/login.php]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/login.php]]></iplink>
+</item>
+
+<item id="007224" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/.gitignore: .gitignore file found. It is possible to grasp the directory structure.]]></description>
+<uri><![CDATA[/dvwa/.gitignore]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/.gitignore]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/.gitignore]]></iplink>
+</item>
+
+<item id="007227" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/wp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.]]></description>
+<uri><![CDATA[/dvwa/wp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/wp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/wp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts]]></iplink>
+</item>
+
+<item id="007227" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/wordpresswp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.]]></description>
+<uri><![CDATA[/dvwa/wordpresswp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/wordpresswp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/wordpresswp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts]]></iplink>
+</item>
+
+<item id="007228" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/wp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.]]></description>
+<uri><![CDATA[/dvwa/wp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/wp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/wp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts]]></iplink>
+</item>
+
+<item id="007228" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/wordpresswp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.]]></description>
+<uri><![CDATA[/dvwa/wordpresswp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/wordpresswp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/wordpresswp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts]]></iplink>
+</item>
+
+<item id="007229" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/wp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.]]></description>
+<uri><![CDATA[/dvwa/wp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/wp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/wp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts]]></iplink>
+</item>
+
+<item id="007229" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/wordpresswp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.]]></description>
+<uri><![CDATA[/dvwa/wordpresswp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/wordpresswp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/wordpresswp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts]]></iplink>
+</item>
+
+<item id="007231" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/assets/mobirise/css/meta.php?filesrc=: A PHP backdoor file manager was found.]]></description>
+<uri><![CDATA[/dvwa/assets/mobirise/css/meta.php?filesrc=]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/assets/mobirise/css/meta.php?filesrc=]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/assets/mobirise/css/meta.php?filesrc=]]></iplink>
+</item>
+
+<item id="007234" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/login.cgi?cli=aa%20aa%27cat%20/etc/hosts: Some D-Link router remote command execution.]]></description>
+<uri><![CDATA[/dvwa/login.cgi?cli=aa%20aa%27cat%20/etc/hosts]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/login.cgi?cli=aa%20aa%27cat%20/etc/hosts]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/login.cgi?cli=aa%20aa%27cat%20/etc/hosts]]></iplink>
+</item>
+
+<item id="007235" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/dvwa/shell?cat+/etc/hosts: A backdoor was identified.]]></description>
+<uri><![CDATA[/dvwa/shell?cat+/etc/hosts]]></uri>
+<namelink><![CDATA[http://127.0.0.1:80/dvwa/shell?cat+/etc/hosts]]></namelink>
+<iplink><![CDATA[http://127.0.0.1:80/dvwa/shell?cat+/etc/hosts]]></iplink>
+</item>
+
+<statistics elapsed="54" itemsfound="20" itemstested="6897" endtime="2020-07-14 12:15:18" />
+</scandetails>
+
+</niktoscan>
+
+
+</niktoscan>
