@@ -15,7 +15,7 @@ import time
 
 # *************************SETUP CONNECTION SECTION***************************
 host = 'https://pjzwurkoa2hqonkk4grw.everable-labs.com/'
-api_key = os.environ['DOJO_KEY']
+api_key = os.environ['DOJO']
 key = 'Token ' + api_key
 user_id = 2 #default user
 prod_name = "DVWA" #Product Name
@@ -23,8 +23,7 @@ prod_desc = "A very detailed description"
 eng_name = "My First Engagement" #Engagement Name
 start_date = datetime.now()
 end_date = start_date+timedelta(days=180)
-zap_path = '/builds/gitlab/root/dsoa-vuln-mgmt-defect-dojo/ZAP-01-Result.xml' #path to scan result
-nikto_path = '/builds/gitlab/root/dsoa-vuln-mgmt-defect-dojo/niktoDVWA.xml' #path to scan result
+zap_path = '/reports/ZAP-01-Result.xml' #path to scan result
 Upload_headers = {
     'Authorization': key,
 }
@@ -111,7 +110,7 @@ def upload(path, scanType):
     eng_id = get_engagement_id(eng_name)
     upload(zap_path, 'ZAP Scan')
     files = {
-        'file': ('ZAP-01-Result.xml', open('/builds/gitlab/root/dsoa-vuln-mgmt-defect-dojo/ZAP-01-Result.xml','rb')),
+        'file': ('ZAP-01-Result.xml', open('/reports/ZAP-01-Result.xml','rb')),
         'scan_type': (None, 'ZAP Scan'),
         'tags': (None, 'api'),
         'verified': (None, 'false'),
@@ -122,16 +121,4 @@ def upload(path, scanType):
     response = requests.post(host+'/api/v2/import-scan/', headers=Upload_headers, files=files)
     print "[+] Uploading " + 'ZAP Scan' +" Response: "+ str(response)
 
-    upload(nikto_path, 'Nikto Scan')
-    files = {
-        'file': ('niktoDVWA.xml', open('/builds/gitlab/root/dsoa-vuln-mgmt-defect-dojo/niktoDVWA.xml', 'rb')),
-        'scan_type': (None, 'Nikto Scan'),
-        'tags': (None, 'api'),
-        'verified': (None, 'false'),
-        'active': (None, 'true'),
-        'scan_date': (None, start_date.strftime("%Y-%m-%d")),
-        'engagement': (None, eng_id),
-    }
-    response = requests.post(host+'/api/v2/import-scan/', headers=Upload_headers, files=files)
-    print "[+] Uploading " + 'Nikto Scan' +" Response: "+ str(response)
-
+    
