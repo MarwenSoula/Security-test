@@ -15,7 +15,7 @@ import time
 
 # *************************SETUP CONNECTION SECTION***************************
 host = 'http://52.146.23.115:8080'
-api_key = os.environ['DOJO']
+api_key = 7fb338ec0265cb7156abfefbea2e92b0ef294bd3
 key = 'Token ' + api_key
 user_id = 2 #default user
 prod_name = "DVWA" #Product Name
