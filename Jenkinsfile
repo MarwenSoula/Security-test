@@ -1,16 +1,12 @@
-
 pipeline {
-  agent any
-  stages {
-    stage('version') {
-      steps {
-        sh 'python3 --version'
-      }
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout([$class: 'GitSCM', branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/vastevenson/pytest-intro-vs.git']]])
+            }
+        }
+       
     }
-    stage('Importing') {
-      steps {
-        sh 'python3 Prod-Engage.py'
-      }
-    }
-  }
 }
