@@ -14,7 +14,7 @@ import time
 
 
 # *************************SETUP CONNECTION SECTION***************************
-host = 'https://pjzwurkoa2hqonkk4grw.everable-labs.com/'
+host = 'http://52.146.23.115:8080'
 api_key = os.environ['DOJO']
 key = 'Token ' + api_key
 user_id = 2 #default user
