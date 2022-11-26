@@ -14,16 +14,16 @@ import time
 
 
 # *************************SETUP CONNECTION SECTION***************************
-host = 'http://52.146.23.115:8080'
-api_key = 7fb338ec0265cb7156abfefbea2e92b0ef294bd3
+host = 'http://20.55.28.161:8080/'
+api_key = cc8481d743fd4818629af6d6f2cfcd4ef7a80b2a
 key = 'Token ' + api_key
 user_id = 2 #default user
-prod_name = "DVWA" #Product Name
+prod_name = "Javulna" #Product Name
 prod_desc = "A very detailed description"
-eng_name = "My First Engagement" #Engagement Name
+eng_name = "Javulna_Engagement" #Engagement Name
 start_date = datetime.now()
 end_date = start_date+timedelta(days=180)
-zap_path = '/reports/ZAP-01-Result.xml' #path to scan result
+zap_path = '/home/defectdojo/Security-test/ZAP-01-Result.xml' #path to scan result
 Upload_headers = {
     'Authorization': key,
 }
@@ -110,7 +110,7 @@ def upload(path, scanType):
     eng_id = get_engagement_id(eng_name)
     upload(zap_path, 'ZAP Scan')
     files = {
-        'file': ('ZAP-01-Result.xml', open('/reports/ZAP-01-Result.xml','rb')),
+        'file': ('ZAP-01-Result.xml', open('/home/defectdojo/Security-test/ZAP-01-Result.xml','rb')),
         'scan_type': (None, 'ZAP Scan'),
         'tags': (None, 'api'),
         'verified': (None, 'false'),
